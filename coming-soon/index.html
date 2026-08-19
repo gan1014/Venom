@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <title>LEGO LEVIATHON — Beast Trailer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=finale2" />
+</head>
+<body>
+  <div id="boot" aria-live="polite">
+    <div class="boot-bg"></div>
+    <div class="boot-veil"></div>
+    <div class="boot-grain"></div>
+    <div class="boot-lb top"></div>
+    <div class="boot-lb bot"></div>
+    <div class="boot-core">
+      <p class="boot-kicker">Cinematic Symbiote Sequence</p>
+      <img class="boot-word" src="assets/ui/title-lego-leviathon.png" alt="LEGO LEVIATHON" />
+      <p class="boot-status" id="boot-status">Binding plates…</p>
+      <div class="boot-bar"><i id="boot-fill"></i></div>
+      <button type="button" id="enter" class="enter">Enter the Foundry</button>
+    </div>
+  </div>
+
+  <div id="progress"><i id="progress-fill"></i></div>
+
+  <div id="stage">
+    <canvas id="frames"></canvas>
+    <canvas id="fx"></canvas>
+    <div class="vignette"></div>
+    <div class="grain"></div>
+    <div class="letterbox top"></div>
+    <div class="letterbox bot"></div>
+    <div id="ca" aria-hidden="true"></div>
+    <div id="flare" aria-hidden="true"></div>
+    <div id="flash" class="flash" aria-hidden="true"></div>
+    <div id="blood" aria-hidden="true"></div>
+    <div id="warn" aria-hidden="true">
+      <p class="warn-hud">CIVILIAN FREQUENCY // INTERRUPTED</p>
+      <p class="warn-stamp">WARNING</p>
+      <p class="warn-big">DO NOT APPROACH</p>
+      <p class="warn-line">THE HOST IS AWAKE</p>
+      <p class="warn-meta">IF YOU SEE THE EYES — RUN</p>
+    </div>
+
+    <div id="endcard">
+      <img id="title-word" src="assets/ui/title-lego-leviathon.png" alt="LEGO LEVIATHON" />
+      <p id="soon">Coming Soon</p>
+    </div>
+  </div>
+
+  <div id="hint"><span>Trailer playing</span><b></b></div>
+  <div id="scroll-track"></div>
+
+  <script src="js/app.js?v=finale2"></script>
+</body>
+</html>

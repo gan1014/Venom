@@ -1,0 +1,63 @@
+/* Integration only. Original 3D stylesheet is not edited. */
+
+#hero-root {
+  position: relative;
+  z-index: 4;
+}
+
+#boot { z-index: 80 !important; }
+
+#stage {
+  position: sticky !important;
+  top: 0;
+  height: 100dvh;
+}
+
+/* FREEZE: nothing after the film exists until the last frame. */
+body:not(.film-done) .site-after,
+body:not(.film-done) .site-footer,
+body:not(.film-done) .site-nav.on-home {
+  display: none !important;
+}
+
+#hackathon-badge {
+  position: absolute;
+  top: max(28px, calc(7.2vh + 36px));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 8;
+  font-size: 11px;
+  letter-spacing: 0.48em;
+  text-transform: uppercase;
+  color: #d5d8de;
+  pointer-events: none;
+  transition: opacity 0.6s;
+}
+body.is-scrolled #hackathon-badge { opacity: 0; }
+
+.hero-end-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0 6px;
+}
+#title { pointer-events: none; }
+.hero-end-cta, #carnage-btn { pointer-events: auto; }
+
+#carnage-btn {
+  appearance: none;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #f6f3f1;
+  border: 1px solid #c43a2a;
+  padding: 16px 28px;
+  background: rgba(8, 0, 0, 0.55);
+  box-shadow: 0 0 36px rgba(196, 58, 42, 0.4);
+}
+#carnage-btn:hover {
+  background: rgba(154, 31, 31, 0.28);
+}

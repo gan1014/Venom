@@ -1,0 +1,29 @@
+# dependencies / build
+node_modules/
+.next/
+out/
+build/
+dist/
+.turbo/
+.vercel/
+
+# secrets and local data
+.env
+.env*.local
+**/.env.local
+portal/data/db.json
+portal/data/db.json.tmp
+
+# junk
+.DS_Store
+*.pem
+*.log
+.cache/
+.npm/
+uploads/
+.arena/
+.config/
+.npm/
+__pycache__/
+*.tsbuildinfo
+portal/next-env.d.ts

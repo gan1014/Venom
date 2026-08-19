@@ -29,7 +29,25 @@ ADMIN_EMAIL=admin@leviathan.local
 ADMIN_PASSWORD=LEVIATHAN-ADMIN-2026
 ```
 
-## Coming-soon trailer
+## Deploy on Vercel
+
+The live app is inside `portal/`, not the repo root. If you skip this, you get `404: NOT_FOUND`.
+
+1. Open the Vercel project → **Settings** → **General**
+2. **Root Directory** → Edit → type `portal` → **Save**
+3. **Settings** → **Environment Variables** → add:
+
+```
+AUTH_SECRET=change-me-to-a-long-random-string
+ADMIN_EMAIL=admin@leviathan.local
+ADMIN_PASSWORD=pick-a-strong-password
+```
+
+4. **Deployments** → latest → **Redeploy** (uncheck “Use existing Build Cache”)
+
+After that, `https://venom-henna.vercel.app` should open the 3D film.
+
+Note: Vercel’s disk is temporary. Registrations in `data/db.json` reset when the instance sleeps or you redeploy. The built-in store is fine for local/dev; a real database is needed if you want counts to survive on Vercel.
 
 ```bash
 cd coming-soon
